@@ -14,10 +14,9 @@
   justify-content: space-between;
 }
 
-.top-menu ul{
+ul{
   list-style: none;
   display:flex;
-  height:100%;
 }
 .top-menu ul li{
   height:100px;
@@ -44,4 +43,25 @@ main{
   color: white;
   display:flex;
   justify-content: center;
+}
+
+.top-footer{
+  background-color: rgb(0, 150, 255);
+  color:white;
+  padding: 30px 0px;
+  display:flex;
+}
+
+.top-footer ul li{
+  list-style: none;
+ 
+}
+.top-footer ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+    align-items: center;
+}
+.top-footer ul li a img{
+ width:50px;
 }
