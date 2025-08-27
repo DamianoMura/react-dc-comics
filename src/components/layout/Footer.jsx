@@ -40,7 +40,16 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className='mid-footer'></div>
+      <div className='mid-footer'>
+        <div className="container-sm">
+          <div className="row">
+            <div className="col-50">menus</div>
+            <div className="col-50">
+              <img src="./img/dc-logo-bg.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='bottom-footer'></div>
     </footer>
   )
