@@ -1,11 +1,12 @@
 import React from 'react'
 
 const ComicCard = (props) => {
+ const {id, thumb, title} = props;
   return (
-    <div className="col-16" key={props.id} >
+    <div className="col-16" key={id} >
       <div className="comic-card">
-        <img src={props.thumb} alt="" />
-        <h3>{props.title}</h3>
+        <img src={thumb} alt="" />
+        <h3>{title}</h3>
       </div>
     </div>
   )
