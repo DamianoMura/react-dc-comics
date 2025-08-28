@@ -5,8 +5,8 @@ const Header = () => {
 
   return (
     
-    <header>
-      <div className="container">
+    <header className='flex-container-between'>
+      
         <div className='logo'>
           <img src="./img/dc-logo.png" alt="" />
         </div>
@@ -25,7 +25,7 @@ const Header = () => {
             <li><a href="#">news</a></li>
             <li><a href="#">shop</a></li>
           </ul>
-        </div>
+        
       </div>
 
     </header>

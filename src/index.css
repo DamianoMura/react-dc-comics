@@ -7,6 +7,9 @@
 
 /*     header style 
 */
+header{
+  display:flex;
+}
 .logo{
   padding:15px;
 }
@@ -112,7 +115,9 @@ color:white;
   object-fit: contain;
 }
 
-
+.site-map{
+  padding: 10px 0px;
+}
 
 .dc-bg{
   background-image: url('./img/dc-logo-bg.png');
@@ -127,9 +132,9 @@ color:white;
 
 .bottom-footer{
   width:100%;
-  min-height:100px;
   background-color: rgb(66, 66, 66);
-  
+  display:flex;
+  justify-content: space-between;
 }
 
 /* UTILITY
@@ -137,16 +142,18 @@ color:white;
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  max-width: 1200px;
   display: flex;
-  justify-content: space-around;
 }
 
-.container-sm {
+.flex-container-between {
   margin: 0 auto;
-  width: 80%;
+  max-width: 1200px;
   display: flex;
+  justify-content: space-between;
 }
+
+
 
 .row{
   display:flex;
