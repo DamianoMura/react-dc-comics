@@ -57,14 +57,11 @@ main{
 /* footer style
 */
 
-footer{
-  position: relative;
-}
+
 
 .top-footer{
   background-color: rgb(0, 98, 255);
-  position: absolute;
-  top:0;
+ 
   width:100%;
   padding:10px;
 }
@@ -78,13 +75,28 @@ footer{
 .link {
   margin:0px 10px;
 }
+
+footer{
+  background-image: url('./img/footer-bg.jpg');
+}
 footer a{
   text-decoration: none;
   color:white;
   display:flex;
-  align-items: center;
-  
-  
+  align-items: center; 
+}
+
+.foot-links{
+  padding:10px 10px;
+}
+
+.foot-links ul{
+  list-style: none;
+}
+
+.foot-links h4{
+margin:10px 0px;
+color:white;
 }
 
 .top-footer a span{
@@ -100,36 +112,20 @@ footer a{
   object-fit: contain;
 }
 
-.mid-footer h3 {
-  margin: 10px 0px;
+
+
+.dc-bg{
+  background-image: url('./img/dc-logo-bg.png');
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position: center;
 }
 
-.mid-footer{
-  padding:10px 0px;
-  background-image: url('./img/footer-bg.jpg');
-  display: flex;
-  justify-content: center;
-}
 
-.mid-footer img{
-  object-fit: contain;
-  max-width: 100%;
-}
 
-.mid-footer ul{
-  list-style: none;
-}
 
-.foot-links {
-  padding-top: 60px;
-  display:flex;
-  flex-direction: column;
-  margin: 0 10px;
-}
 
 .bottom-footer{
-  position: absolute;
-  bottom:0;
   width:100%;
   min-height:100px;
   background-color: rgb(66, 66, 66);
@@ -156,6 +152,7 @@ footer a{
   display:flex;
   flex-wrap: wrap;
   gap:0;
+  width:100%;
 }
 
 
