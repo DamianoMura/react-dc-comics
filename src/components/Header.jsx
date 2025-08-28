@@ -1,8 +1,8 @@
 import React from 'react'
 
 const Header = (props) => {
-  const links = props.links
-
+const {section,links} =props.data;
+// console.log(links,section)
   return (
     
     <header className='flex-container-between'>

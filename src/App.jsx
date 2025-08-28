@@ -4,9 +4,11 @@ import Footer from './components/Footer'
 
 
 function App() {
-  const headLinks=[
-     
-      {
+  const linksList=[
+    {
+      section : "header",
+      links: [
+        {
         id:1,
         href:"#",
         title:"characters",
@@ -65,65 +67,90 @@ function App() {
         href:"#",
         title:"shop",
         active:false
-    }
-  ]
-  const footLinks=[
+      }
+      ]
+    },
     {
-      category: "DC COMICS",
+      section:"top-footer",
       links:[
         {
           id:1,
-          title: "characters",
+          image:"./img/buy-comics-digital-comics.png",
+          title:"digital comics",
           href:"#"
         },
         {
           id:2,
-          title: "Comics",
+          image:"./img/buy-comics-merchandise.png",
+          title:"merchandise",
           href:"#"
         },
         {
           id:3,
-          title: "Movies",
+          image:"./img/buy-comics-subscriptions.png",
+          title:"subscription",
           href:"#"
         },
         {
           id:4,
-          title: "TV",
+          image:"./img/buy-comics-shop-locator.png",
+          title:"shop locator",
           href:"#"
         },
         {
           id:5,
-          title: "Games",
+          image:"./img/buy-dc-power-visa.svg",
+          title:"dc power visa",
           href:"#"
         },
-        {
-          id:6,
-          title: "Videos",
-          href:"#"
-        },
-        {
-          id:7,
-          title: "News",
-          href:"#"
-        }
       ]
     },
     {
-      category: "Shop",
+      section : "mid-footer",
       links:[
-        {
+        { 
           id:1,
-          title:"Shop DC",
-          href:"#"
-        },
-        {
-          id:2,
-          title:"Shop DC Collectibles",
-          href:"#"
-        },
+          category: "DC COMICS",
+          links:[
+          {
+            id:1,
+            title: "characters",
+            href:"#"
+          },
+          {
+            id:2,
+            title: "Comics",
+            href:"#"
+          },
+          {
+            id:3,
+            title: "Movies",
+            href:"#"
+          },
+          {
+            id:4,
+            title: "TV",
+            href:"#"
+          },
+          {
+            id:5,
+            title: "Games",
+            href:"#"
+          },
+          {
+            id:6,
+            title: "Videos",
+            href:"#"
+          },
+          {
+            id:7,
+            title: "News",
+            href:"#"
+          }
       ]
     },
-    {
+    { 
+      id:2,
       category: "DC",
       links:[
         {
@@ -183,7 +210,8 @@ function App() {
         }
       ]
     },
-    {
+    { 
+      id:3,
       category:"SITES",
       links:[
         {
@@ -210,52 +238,39 @@ function App() {
           id:5,
           title:"DC Power Visa",
           href:"#"
-        },
+        }, 
+        
       ]
     },
-    {
-      category:"top-footer",
+    { 
+      id:4,
+      category: "Shop",
       links:[
         {
           id:1,
-          image:"./img/buy-comics-digital-comics.png",
-          title:"digital comics",
+          title:"Shop DC",
           href:"#"
         },
         {
           id:2,
-          image:"./img/buy-comics-merchandise.png",
-          title:"merchandise",
+          title:"Collectibles",
           href:"#"
-        },
-        {
-          id:3,
-          image:"./img/buy-comics-subscriptions.png",
-          title:"subscription",
-          href:"#"
-        },
-        {
-          id:4,
-          image:"./img/buy-comics-shop-locator.png",
-          title:"shop locator",
-          href:"#"
-        },
-        {
-          id:5,
-          image:"./img/buy-dc-power-visa.svg",
-          title:"dc power visa",
-          href:"#"
-        },
-        
+        }
       ]
     }
+        
+      ]
 
+    },
+    
   ]
+
   return (
     <>
-      <Header links={headLinks}/>
+    {/* {console.log(linksList)} */}
+      <Header data={linksList[0]}/>
       <Main/>
-      <Footer links={footLinks}/>
+      <Footer data={linksList}/>
     </>
   )
 }

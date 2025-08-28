@@ -1,9 +1,9 @@
 const TopFooterLinks = (props) => {
   
-  const {category, links} = props.links;
+  const {section, links} = props.data;
   
   return (
-    <div className={category}>
+    <div className={section}>
       <div className="list-icons">
         {links.map(link => {
           const {id, title, href, image} = link;

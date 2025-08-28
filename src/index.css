@@ -100,6 +100,7 @@ footer a{
 .foot-links h4{
 margin:10px 0px;
 color:white;
+position:relative;
 }
 
 .top-footer a span{
@@ -119,6 +120,10 @@ color:white;
   padding: 10px 0px;
 }
 
+.shop.position{
+  position: absolute;
+  bottom:0;
+}
 .dc-bg{
   background-image: url('./img/dc-logo-bg.png');
   background-repeat: no-repeat;
