@@ -126,15 +126,30 @@ color:white;
   background-position: center;
 }
 
-
-
-
-
 .bottom-footer{
-  width:100%;
   background-color: rgb(66, 66, 66);
+  padding: 10px 0px;
+}
+
+.btn{
+  border: solid rgb(0, 98, 255) 3px;
+  padding:10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.socials{
   display:flex;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.socials span{
+  color : rgb(0, 98, 255);
+  font-weight: 600;
+}
+
+.socials a{
+  padding:10px;
 }
 
 /* UTILITY
@@ -153,6 +168,10 @@ color:white;
   justify-content: space-between;
 }
 
+.align-center{
+  display: flex;
+  align-items: center;
+}
 
 
 .row{
