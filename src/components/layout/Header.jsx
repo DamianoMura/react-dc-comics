@@ -13,7 +13,9 @@ const Header = () => {
         <div className="top-menu">
           <ul>
             <li><a href="#">characters</a></li>
-            <li className='active'><a href="#" >comics</a></li>
+            <li className='active'>
+              <a href="#" >comics</a>
+            </li>
             <li><a href="#">movies</a></li>
             <li><a href="#">tv</a></li>
             <li><a href="#">games</a></li>
