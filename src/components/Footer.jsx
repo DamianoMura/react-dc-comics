@@ -1,10 +1,11 @@
 import TopFooterLinks from "./TopFooterLinks"
 import MidFooter from "./MidFooter"
 import BottomFooter from "./BottomFooter"
-const Footer = () => {
+const Footer = (props) => {
+  const links =props.links;
   return (
     <footer>
-      <TopFooterLinks/>
+      <TopFooterLinks links={links[4]}/>
       <MidFooter/>
       <BottomFooter/> 
     </footer>
